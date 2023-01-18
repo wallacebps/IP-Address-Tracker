@@ -3,22 +3,18 @@
 
 *{
     margin: 0;
-    padding: 0;
-    
-   
+    padding: 0; 
 }
 header{
     background-image: url('../images/pattern-bg.png');
+    
     height: 14em;
     position: relative;
     overflow: visible;
-    padding-top: 0;
-    
+   
 }
 .topo{
     text-align: center;
-    
-    
 }
 .infos{
     position: absolute;
@@ -28,5 +24,12 @@ header{
     height: 50%;
     bottom: 0;
     background-color: red;
+    z-index: 999;  
+}
+#map{
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    
     
 }
