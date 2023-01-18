@@ -1,0 +1,32 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    margin: 0;
+    padding: 0;
+    
+   
+}
+header{
+    background-image: url('../images/pattern-bg.png');
+    height: 14em;
+    position: relative;
+    overflow: visible;
+    padding-top: 0;
+    
+}
+.topo{
+    text-align: center;
+    
+    
+}
+.infos{
+    position: absolute;
+    top: 75%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    bottom: 0;
+    background-color: red;
+    
+}
