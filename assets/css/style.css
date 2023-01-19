@@ -1,21 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
-
 *{
     margin: 0;
-    padding: 0; 
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 header{
     background-image: url('../images/pattern-bg.png');
-    
     height: 14em;
     position: relative;
-    overflow: visible;
-   
+    overflow: visible; 
 }
 .topo{
-    text-align: center;
+    text-align: center;    
 }
+.topo h1{
+    padding-top: 1em;
+    color: white;
+    margin-bottom: 0.5em;
+}
+.campo-busca input{
+    height: 3em;
+    padding: 0.1em 0.2em;
+    border-radius: 10px 0 0 10px;  
+    margin-right: 0;
+    padding-right: 0;
+    border: 0; 
+}
+.campo-busca button{
+    height: 3em;
+    padding: 0.5em 1em;
+    background-color: black;
+    color:white;
+    border-radius: 0 10px 10px 0;
+    border: 0;
+    
+} 
 .infos{
     position: absolute;
     top: 75%;
@@ -23,7 +45,7 @@ header{
     width: 50%;
     height: 50%;
     bottom: 0;
-    background-color: red;
+    background-color: white;
     z-index: 999;  
 }
 #map{
