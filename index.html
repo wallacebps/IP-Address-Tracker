@@ -17,12 +17,29 @@
   <header>
       <div class="topo">
         <h1>IP Address Tracker</h1>
-        <div class="campo-busca">
-          <input type="text" name="digite" value="" placeholder="Search for any IP address or domain" size="50em">   
-          <button>></button>
-        </div>
+        <form class="campo-busca">
+            <input id="ip-preenchido" type="text" name="digite" value="" placeholder="Search for any IP address or domain" size="50em">   
+            <button type="submit"><img src="./assets/images/icon-arrow.svg" alt=""></button>
+        </form>
       </div>
-      <div class="infos"></div>
+      <div class="infos">
+        <div class="infos-titulos">
+          <p class="info-especifica">IP ADDRESS</p>
+          <p id="ip-address"></p>
+        </div>
+        <div class="infos-titulos">
+          <p class="info-especifica">LOCATION</p>
+          <p id="location"></p>
+        </div>
+        <div class="infos-titulos">
+          <p class="info-especifica">TIMEZONE</p>
+          <p id="timezone"></p>
+        </div>
+        <div class="infos-titulos">
+          <p class="info-especifica">ISP</p>
+          <p id="isp"></p>
+        </div>    
+      </div>
   </header>
     <div id="map"></div>
     

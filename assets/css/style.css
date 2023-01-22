@@ -21,6 +21,11 @@ header{
     color: white;
     margin-bottom: 0.5em;
 }
+.campo-busca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .campo-busca input{
     height: 3em;
     padding: 0.1em 0.2em;
@@ -29,15 +34,21 @@ header{
     padding-right: 0;
     border: 0; 
 }
-.campo-busca button{
-    height: 3em;
-    padding: 0.5em 1em;
-    background-color: black;
-    color:white;
+.campo-busca img{
+    height: 1.6em;
+    background-color: transparent;
+    padding: 0.7em;
     border-radius: 0 10px 10px 0;
-    border: 0;
+    align-items: center;
+}
+.campo-busca button{
+    background-color: black;
+    border: 0px solid black;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
     
-} 
+}    
+
 .infos{
     position: absolute;
     top: 75%;
@@ -46,7 +57,18 @@ header{
     height: 50%;
     bottom: 0;
     background-color: white;
-    z-index: 999;  
+    z-index: 999;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;  
+}
+.infos-titulos{
+    width: 25%;    
+}
+.info-especifica{
+    color: hsl(0, 0%, 59%);
+    font-size: 12px;
+    padding-left: 2em;
 }
 #map{
     height: 500px;
