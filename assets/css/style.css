@@ -28,11 +28,13 @@ header{
 }
 .campo-busca input{
     height: 3em;
+    width: 40%;
     padding: 0.1em 0.2em;
     border-radius: 10px 0 0 10px;  
     margin-right: 0;
     padding-right: 0;
-    border: 0; 
+    border: 0;
+    padding-left: 1em; 
 }
 .campo-busca img{
     height: 1.6em;
@@ -60,20 +62,43 @@ header{
     z-index: 999;
     border-radius: 10px;
     display: flex;
-    align-items: center;  
+    align-items: center;
+    padding-left: 2em; 
 }
 .infos-titulos{
-    width: 25%;    
+    width: 25%;
+        
 }
 .info-especifica{
     color: hsl(0, 0%, 59%);
     font-size: 12px;
-    padding-left: 2em;
+    text-align: start; 
+}
+.info-resposta{
+    font-size: 18px;
+    font-weight: bold;
 }
 #map{
     height: 500px;
     width: 100%;
-    text-align: center;
+    text-align: center; 
+}
+@media(max-width: 570px){
+    .infos{
+        flex-direction: column;
+        height: 150%;
+        width: 43%;
+        padding-top: 1.5em;
+        padding-left: 0;
+
+    }
+    .infos-titulos{
+        margin: 0.5em;
+        width: 100%;
+        text-align: center;
+    }
+   .info-especifica{
+        text-align: center;
     
-    
+   }
 }

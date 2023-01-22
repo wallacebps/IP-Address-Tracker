@@ -6,7 +6,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 L.marker([51.5, -0.09]).addTo(map)
-    .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+    .bindPopup()
     .openPopup();
 
 
@@ -21,25 +21,20 @@ form.addEventListener('submit', (event) => {
     const input = document.querySelector('#ip-preenchido');
     const ip = input.value;
 
-    fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_O4xKl2vqPE56d6701KT0i6ZA8LLdW&ipAddress=${ip}`)
+    fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=${apiKey}&ipAddress=${ip}`)
       .then(response => response.json())
       .then(data => {
         document.getElementById("ip-address").innerHTML = data.ip;
         document.getElementById("location").innerHTML = data.location.city + ", " + data.location.country;
         document.getElementById("timezone").innerHTML = data.location.timezone;
         document.getElementById("isp").innerHTML = data.isp;
+        map.setView([data.location.lat, data.location.lng], 15);
+        var marker = L.marker([data.location.lat, data.location.lng]).addTo(map);
       })
       .catch(error => console.error(error));
   });
 
-/*
-   fetch(`https://geo.ipify.org/api/v2/country?apiKey=at_O4xKl2vqPE56d6701KT0i6ZA8LLdW&ipAddress=${ip}`)
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error(error));
-*/
   
-
 
 
 
